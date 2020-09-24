@@ -1,0 +1,18 @@
+<html>
+    <script>
+//funciones
+        function sum(num1, num2) {
+return num1 + num2;
+alert("Hello world"); //never executed
+}
+
+// no overlanding
+function addSomeNumber(num){
+return num + 100;
+}
+function addSomeNumber(num) {
+return num + 200;
+}
+var result = addSomeNumber(100); //300
+    </script>
+</html>
