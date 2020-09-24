@@ -1,0 +1,41 @@
+<html>
+    <script>
+//unitary operator
+var s1 = "2";
+var s2 = "z" ;
+var b = false;
+var f = 1.1;
+var o = {
+valueOf: function() {
+return -1;
+}
+};
+s1++; //value becomes numeric 3
+s2++; //value becomes NaN
+b++; //value becomes numeric 1
+f--; //value becomes 0.10000000000000009 (due to floating-point inaccuracies)
+o--; //value becomes numeric -2
+
+//boolean operator
+alert(!!”blue”); //true
+alert(!!0); //false
+alert(!!NaN); //false
+alert(!!””); //false
+alert(!!12345); //true
+//multiplicative operator
+var num1 = 5;
+var num2 = 10;
+var message = “The sum of 5 and 10 is “ + num1 + num2;
+alert(message); //”The sum of 5 and 10 is 510”
+
+//aditive operator
+var result1 = 5 - true; //4 because true is converted to 1
+var result2 = NaN - 1; //NaN
+var result3 = 5 - 3; //2
+var result4 = 5 - “”; //5 because “” is converted to 0
+var result5 = 5 - “2”; //3 because “2” is converted to 2
+var result6 = 5 - null; //5 because null is converted to 0
+
+
+    </script>
+</html>
