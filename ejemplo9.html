@@ -1,72 +1,76 @@
 <html>
-    <script>
-//sentencia if
-if (i > 25) {
-alert("Greater than 25.");
-} else if (i < 0) {
-alert("Less than 0.");
-} else {
-alert("Between 0 and 25, inclusive.");
-}
-//do-while
-var i = 0;
-do {
-i += 2;
-} while (i < 10);
 
-//while
-var i = 0;
-while (i < 10) {
-i += 2;
-}
+<head>
+</head>
+<script>
+    //sentencia if
+    if (i > 25) {
+        alert("Greater than 25.");
+    } else if (i < 0) {
+        alert("Less than 0.");
+    } else {
+        alert("Between 0 and 25, inclusive.");
+    }
+    //do-while
+    var i = 0;
+    do {
+        i += 2;
+    } while (i < 10);
 
-//for
-var count = 10;
-var i = 0;
-for (; i < count; ){
-alert(i);
-i++;
-}
+    //while
+    var i = 0;
+    while (i < 10) {
+        i += 2;
+    }
 
-//break
-var num = 0;
-for (var i=1; i < 10; i++) {
-if (i % 5 == 0) {
-break;
-}
-num++;
-}
-alert(num); //4
+    //for
+    var count = 10;
+    var i = 0;
+    for (; i < count;) {
+        alert(i);
+        i++;
+    }
 
-//continue
+    //break
+    var num = 0;
+    for (var i = 1; i < 10; i++) {
+        if (i % 5 == 0) {
+            break;
+        }
+        num++;
+    }
+    alert(num); //4
 
-var num = 0;
-for (var i=1; i < 10; i++) {
-if (i % 5 == 0) {
-continue;
-}
-num++;
-}
-alert(num); //8
+    //continue
 
-//swich
+    var num = 0;
+    for (var i = 1; i < 10; i++) {
+        if (i % 5 == 0) {
+            continue;
+        }
+        num++;
+    }
+    alert(num); //8
 
-switch (i) {
-case 25:
-alert("25");
-break;
-case 35:
-alert("35");
-break;
-case 45:
-alert("45");
-break;
-default:
-alert("Other");
-}
+    //swich
 
+    switch (i) {
+        case 25:
+            alert("25");
+            break;
+        case 35:
+            alert("35");
+            break;
+        case 45:
+            alert("45");
+            break;
+        default:
+            alert("Other");
+    }
 
+</script>
 
+<body>
+</body>
 
-    </script>
 </html>
