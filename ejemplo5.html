@@ -1,88 +1,93 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Data types
+        // Undefined, Null, Boolean, Number, and String.}
+
+        var car = null;
+        alert(typeof car); //"object"
+
+        car = {
+            "id": 1,
+            "type": 'Lamborghini'
+        }
+
+
+        if (car != null) {
+            alert('Tenemos un carro"');
+        }
+
+
+        alert(null == undefined);
+
+        // De forma implicita setea el navegador el valor 'undefined'
+        var message; // Valor por default undefined
+        alert(message == undefined); //true
+
+        var message = undefined; // Seteamos de forma explicita el valor 'undefined'
+        alert(message == undefined); //true
+
+
+        // // Boolean data type
+        var found = true;
+        var lost = false;
+
+
+        debugger;
+
+        var message = "Hello world!";
+        var messageAsBoolean = Boolean(message);
+        var hexa = 0x1f; // Hexadecimal
+        var hexNum1 = 0xA; //hexadecimal for 10
+
+        // Ejemplo de ocateles valios e invalidos
+        //number type
+
+
+        var octalNum1 = 070; //octal for 56
+        var octalNum2 = 077; //invalid octal - interpreted as 77
+        var octalNum3 = 08; //invalid octal - interpreted as 8
+
+
+
+        var floatNum1 = 1.1;
+        var floatNum2 = 0.1;
+        var floatNum3 = .1; //valid, but not recommended
+
+        var floatNum1 = 1.; //missing digit after decimal - interpreted as integer 1
+        var floatNum2 = 10.0; //whole number - interpreted as integer 10
+
+        var floatNum = 3.125e7; //equal to 31250000
+        var pi = 3.141592e7;
+
+        Number.MIN_VALUE
+        Number.MAX_VALUE
+
+        Number.NEGATIVE_INFINITY
+        Number.POSITIVE_INFINITY
+
+        // Not a Number - NaN
+
+
+        let x = 0;
+        let y = 'a';
+
+
+        alert(isNaN(NaN)); //true
+        alert(isNaN(10)); //false - 10 is a number
+        alert(isNaN("10")); //false - can be converted to number 10
+        alert(isNaN("blue")); //true - cannot be converted to a number
+        alert(isNaN(true)); //false - can be converted to number 1
+    </script>
 </head>
-<script>
-    // Data types
-    // Undefined, Null, Boolean, Number, and String.}
-
-    var car = null;
-    alert(typeof car); //"object"
-
-    car = {
-        "id": 1,
-        "type": 'Lamborghini'
-    }
-
-
-    if (car != null) {
-        alert('Tenemos un carro"');
-    }
-
-
-    alert(null == undefined);
-
-    // De forma implicita setea el navegador el valor 'undefined'
-    var message; // Valor por default undefined
-    alert(message == undefined); //true
-
-    var message = undefined; // Seteamos de forma explicita el valor 'undefined'
-    alert(message == undefined); //true
-
-
-    // // Boolean data type
-    var found = true;
-    var lost = false;
-
-
-    debugger;
-
-    var message = "Hello world!";
-    var messageAsBoolean = Boolean(message);
-    var hexa = 0x1f; // Hexadecimal
-    var hexNum1 = 0xA; //hexadecimal for 10
-
-    // Ejemplo de ocateles valios e invalidos
-    //number type
-
-
-    var octalNum1 = 070; //octal for 56
-    var octalNum2 = 077; //invalid octal - interpreted as 77
-    var octalNum3 = 08; //invalid octal - interpreted as 8
-
-
-
-    var floatNum1 = 1.1;
-    var floatNum2 = 0.1;
-    var floatNum3 = .1; //valid, but not recommended
-
-    var floatNum1 = 1.; //missing digit after decimal - interpreted as integer 1
-    var floatNum2 = 10.0; //whole number - interpreted as integer 10
-
-    var floatNum = 3.125e7; //equal to 31250000
-    var pi = 3.141592e7;
-
-    Number.MIN_VALUE
-    Number.MAX_VALUE
-
-    Number.NEGATIVE_INFINITY
-    Number.POSITIVE_INFINITY
-
-    // Not a Number - NaN
-
-
-    let x = 0;
-    let y = 'a';
-
-
-    alert(isNaN(NaN)); //true
-    alert(isNaN(10)); //false - 10 is a number
-    alert(isNaN("10")); //false - can be converted to number 10
-    alert(isNaN("blue")); //true - cannot be converted to a number
-    alert(isNaN(true)); //false - can be converted to number 1
-</script>
 
 <body>
+
 </body>
 
 </html>

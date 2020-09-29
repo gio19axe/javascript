@@ -1,27 +1,32 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Example3() {
+
+            "use strict";
+
+            debugger;
+
+            var a = 0;
+            var b = 1;
+
+            var sum = a + b //valid even without a semicolon - not recommended
+            console.log(sum);
+
+            var diff = a - b; //valid - preferred
+            console.log(diff);
+
+        }
+    </script>
 </head>
-<script>
-    function Example3() {
-
-        "use strict";
-
-        debugger;
-
-        var a = 0;
-        var b = 1;
-
-        var sum = a + b //valid even without a semicolon - not recommended
-        console.log(sum);
-
-        var diff = a - b; //valid - preferred
-        console.log(diff);
-
-    }
-</script>
 
 <body>
+
 </body>
 
 </html>
