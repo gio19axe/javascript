@@ -10,7 +10,7 @@
 
         function sayHi(name, message) {
 
-            alert('Hello ' + name + ', ' + message); //never called
+            alert('que  ' + 'tranza' + name + ', ' + message); //never called
         }
 
  /*       function sayHi() {
@@ -18,7 +18,67 @@
         }
 */
 debugger
-        sayHi("jovas", "que onda");
+
+        sayHi("jovas", "como estas");
+
+        /////////////////////////
+
+        function sum(num1, num2) {
+return num1 + num2;
+alert('Hello world'); //never executed
+}
+
+//sum(5,5);
+
+///////////////////////
+function diff(num1, num2) {
+if (num1 < num2) {
+return num2 - num1;
+} 
+else {
+return num1 - num2;
+}
+}
+
+debugger
+/////////  Understanding Arguments////
+function howManyArgs() {
+alert(arguments.length);
+}
+howManyArgs('string', 45); //2
+howManyArgs(); //0
+howManyArgs(12); //1
+
+////////////////////////////////////
+function doAdd() {
+if(arguments.length == 1) {
+alert(arguments[0] + 10);
+} else if (arguments.length == 2) {
+alert(arguments[0] + arguments[1]);
+}
+}
+doAdd(10); //20
+doAdd(30, 20); //50
+
+function doAdd() {
+if(arguments.length == 1) {
+alert(arguments[0] + 10);
+} else if (arguments.length == 2) {
+alert(arguments[0] + arguments[1]);
+}
+}
+doAdd(10); //20
+doAdd(30, 20); //50
+
+////////// no over loading ///////////////
+
+function addSomeNumber(num){
+return num + 100;
+}
+function addSomeNumber(num) {
+return num + 200;
+}
+var result = addSomeNumber(100); //300
 
     </script>
 
