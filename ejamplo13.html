@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><h1>capitulo 5</h1></title>
+<script>
+    var person = new Object ();
+person.name = "Nicolás";
+persona.Edad = 29;
+
+//////
+var person = {
+nombre: "Nicholas",
+edad: 29
+};
+
+/////
+var person = {
+"Nombre": "Nicolás",
+"Edad": 29,
+5: verdad
+}
+
+////////////
+var person = {}; // igual que el nuevo Object ()
+person.name = "Nicolás";
+persona.Edad = 29;
+
+/////////
+function displayInfo (args) {
+var salida = “”;
+if (typeof args.name == "cadena") {
+salida + = "Nombre:" + args.name + "\ n";
+}
+if (typeof args.age == "number") {
+salida + = "Edad:" + args.age + "\ n";
+}
+alerta (salida);
+}
+displayInfo ({
+nombre: "Nicholas",
+edad: 29
+});
+displayInfo ({
+nombre: "Greg"
+});
+
+///////
+alerta (persona [“nombre”]); // "Nicholas"
+alert (person.name); // "Nicholas"
+
+//////////
+var propertyName = "nombre";
+alerta (persona [propertyName]); // "Nicholas"
+
+//////
+
+</script>
+</head>
+<body>
+    
+</body>
+</html>
