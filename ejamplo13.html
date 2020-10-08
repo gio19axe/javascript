@@ -1,64 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><h1>capitulo 5</h1></title>
-<script>
-    var person = new Object ();
-person.name = "Nicolás";
-persona.Edad = 29;
+    <title>
+        <h1>capitulo 5</h1>
+    </title>
+    <script>
+        debugger;
+        var person = new Object();
+        person.name = "jovany";
+        person.Edad = 29;
 
-//////
-var person = {
-nombre: "Nicholas",
-edad: 29
-};
+        //////
+        var person = {
+            name: "jovany",
+            edad: 29
+        };
 
-/////
-var person = {
-"Nombre": "Nicolás",
-"Edad": 29,
-5: verdad
-}
+        /////
+        var person = {
+            "name": "jovany",
+            "Edad": 29,
+            5: true
+        }
 
-////////////
-var person = {}; // igual que el nuevo Object ()
-person.name = "Nicolás";
-persona.Edad = 29;
+        ////////////
+        var person = {}; // igual que el nuevo Object ()
+        person.name = "jovany";
+        person.Edad = 29;
 
-/////////
-function displayInfo (args) {
-var salida = '”;
-if (typeof args.name == "cadena") {
-salida + = "Nombre:" + args.name + "\ n";
-}
-if (typeof args.age == "number") {
-salida + = "Edad:" + args.age + "\ n";
-}
-alerta (salida);
-}
-displayInfo ({
-nombre: "Nicholas",
-edad: 29
-});
-displayInfo ({
-nombre: "Greg"
-});
+        /////////
+        function displayInfo(args) {
+            var salida = '';
+            if (typeof args.name == "string") {
+                salida += "name:" + args.name + "\ n";
+            }
+            if (typeof args.age == "number") {
+                salida += "Edad:" + args.age + "\ n";
+            }
+           alert(salida);
+        }
+        displayInfo({
+            name: "jovany",
+            edad: 29
+        });
+        displayInfo({
+            name: "Greg"
+        });
 
+        ///////
+       alert(person['name']); // "jovany"
+        alert(person.name); // "jovany"
+
+        //////////
+        var propertyName = "name";
+       alert(person[propertyName]); // "jovany"
+
+        //////
+        person["first name"] = "jovany";
+
+        /////////
+        var colors = new Array(); //tamaño dinamico 
+
+        ///
+        var colors = new Array(20); // tamaño fijo de 20
+
+        ////
+        var colors = new Array("rojo", "azul", "verde");
+
+        /////
+        var colors = new Array(3); // crea una matriz con tres elementos
+
+        ////////
+        var names = new Array("Greg"); // crea una matriz con un elemento, la string "Greg"
+
+        ////////// "Es posible omitir el operador new cuando se usa el constructor Array"
+
+        var colors = Array(3); // crea una matriz con tres elementos
+        var names = Array("Greg"); // crea una matriz con un elemento, la string "Greg"
+
+        ///////////
+
+        var colors = ["rojo", "azul", "verde"]; // crea una matriz con tres strings
+        var names = []; // crea una matriz vacía
+        var valores =[1, 2,]; //¡EVITAR! Crea una matriz con 2 o 3 elementos
+        var opciones = [, , , , ,]; //¡EVITAR! crea una matriz con 5 o 6 elementos
+        ///////////
+
+        var colors = ["red", "blue", "green"]; //define an array of strings
+        alert(colors[0]); //display the first item
+        colors[2] = "black"; //change the third item
+        colors[3] = "brown"; //add a fourth item
+        //////////
+
+        var colors = ['red', 'blue', 'green']; //creates an array with three strings
+        var names = []; //creates an empty array
+        alert(colors.length); //3
+        alert(names.length); //0
+        /////
+
+        var colors = ['red', 'blue', 'green']; //creates an array with three strings
+        colors.length = 2;
+        alert(colors[2]); //undefined
 ///////
-alerta (persona ['nombre']); // "Nicholas"
-alert (person.name); // "Nicholas"
 
-//////////
-var propertyName = "nombre";
-alerta (persona [propertyName]); // "Nicholas"
 
-//////
 
-</script>
+
+    </script>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
